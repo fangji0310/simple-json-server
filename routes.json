@@ -1,0 +1,13 @@
+{
+  "routes" : [
+    {
+      "path": "/id/:query1"  , "method": "get", "repository": "./example"
+    },
+    {
+      "path": "/demo"        , "method": "get", "repository": "./example"
+    },
+    {
+      "path": "/demo/:query1", "method": "get", "repository": "./example"
+    }
+  ]
+}
