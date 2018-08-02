@@ -14,6 +14,10 @@ class SimpleJsonServer {
     }))
     app.use(express.json())
     app.use(router);
+    app.use(function(req, res, next) {
+      res.status(404)
+      res.json({})
+    })
     return app
   }
 }
