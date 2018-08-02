@@ -1,1 +1,8 @@
-{"id":1,"name":"demo"}
+{
+  "id":1,
+  "name":"user1",
+  "detail": {
+    "age": 10,
+    "city" : "tokyo"
+  }
+}
