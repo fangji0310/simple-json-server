@@ -89,6 +89,7 @@ $ curl http://localhost:28080/demo/demo1?age=15
 |method | get         | HTTP method. it only supports get.|
 |repository | ./example | the path which contains dummy response json files |
 |strategy | (optional) defaultStrategy | strategy define how to use query parameter|
+
 ex.
 ```
 {
