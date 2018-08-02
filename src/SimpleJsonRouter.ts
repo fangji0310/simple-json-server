@@ -24,7 +24,7 @@ class SimpleJsonRouter {
                 if (element.method == 'get') {
                     router.get(element.path,
                         function (req, res, next) {
-                            var result = SimpleJsonRouterMethod.get(req, res, element.repository)
+                            var result = SimpleJsonRouterMethod.get(req, res, element.repository, element.strategy)
                             if (result) {
                                 next()
                             }
@@ -35,7 +35,7 @@ class SimpleJsonRouter {
                 if (element.method == 'post') {
                     router.post(element.path,
                         function (req, res, next) {
-                            var result = SimpleJsonRouterMethod.post(req, res, element.repository)
+                            var result = SimpleJsonRouterMethod.post(req, res, element.repository, element.strategy)
                             if (result) {
                                 next()
                             }

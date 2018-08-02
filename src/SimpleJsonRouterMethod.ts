@@ -6,15 +6,6 @@ import {DEFAULT_RESPONSE_STRATEGY} from "./config/ResponseStrategyStore";
 class SimpleJsonRouterMethod {
 
     /**
-     * GET method with default strategy
-     * @param {e.Request} request
-     * @param {e.Response} response
-     * @param {string} repository
-     * @returns {boolean}
-     */
-    static get(request: Request, response: Response, repository: string): boolean
-
-    /**
      * GET method
      *
      * @param {e.Request} request
@@ -29,16 +20,6 @@ class SimpleJsonRouterMethod {
         }
         return this.action(request, response, repository, strategyName)
     }
-
-    /**
-     * POST method with default strategy
-     *
-     * @param {e.Request} request
-     * @param {e.Response} response
-     * @param {string} repository
-     * @returns {boolean}
-     */
-    static post(request: Request, response: Response, repository: string): boolean
 
     /**
      * POST metehod

@@ -2,8 +2,7 @@
   "routes" : [
     {"path": "/id/:query1"          , "method": "get", "repository": "./example"},
     {"path": "/id/:query1/:query2"  , "method": "get", "repository": "./example"},
-    {"path": "/demo"        , "method": "get", "repository": "./example"},
-    {"path": "/demo/:name", "method": "get", "repository": "./example"},
-    {"path": "/demo/:name/:query1", "method": "get", "repository": "./example"}
+    {"path": "/demo"                , "method": "get", "repository": "./example"},
+    {"path": "/demo/:name"          , "method": "get", "repository": "./example", "strategy": "defaultStrategy"}
   ]
 }

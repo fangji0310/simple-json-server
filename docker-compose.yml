@@ -6,4 +6,6 @@ services:
     working_dir: /home/node/app/
     volumes:
       - .:/home/node/app/
+    ports:
+      - "28080:28080"
     command: sh -c "npm install && nodemon"
